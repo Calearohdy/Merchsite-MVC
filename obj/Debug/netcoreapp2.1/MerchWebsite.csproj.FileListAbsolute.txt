@@ -49,3 +49,4 @@
 /Users/calerohdy/Desktop/Projects/MerchWebsite/obj/Debug/netcoreapp2.1/Razor/Areas/Admin/Views/SpecialTags/Details.g.cshtml.cs
 /Users/calerohdy/Desktop/Projects/MerchWebsite/obj/Debug/netcoreapp2.1/Razor/Areas/Admin/Views/SpecialTags/Edit.g.cshtml.cs
 /Users/calerohdy/Desktop/Projects/MerchWebsite/obj/Debug/netcoreapp2.1/Razor/Areas/Admin/Views/SpecialTags/Index.g.cshtml.cs
+/Users/calerohdy/Desktop/Projects/MerchWebsite/obj/Debug/netcoreapp2.1/Razor/Areas/Admin/Views/Products/Index.g.cshtml.cs

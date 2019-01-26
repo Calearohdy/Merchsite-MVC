@@ -21,11 +21,12 @@
 </head>
 <body>
 <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-<a href="#" class="navbar-brand">My Merch</a>
+<a asp-area="Customer" asp-controller="Home" asp-action="Index" class="navbar-brand">My Merch</a>
   <div class="collapse navbar-collapse">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item"><a asp-area="Admin" asp-controller="ProductTypes" asp-action="Index" class="nav-link">Product Types</a></li>
       <li class="nav-item"><a asp-area="Admin" asp-controller="SpecialTags" asp-action="Index" class="nav-link">Special Tags</a></li>
+      <li class="nav-item"><a asp-area="Admin" asp-controller="Product" asp-action="Index" class="nav-link">Products</a></li>
     </ul>
   </div>
   <div>
