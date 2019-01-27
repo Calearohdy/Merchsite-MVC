@@ -16,6 +16,34 @@ namespace MerchWebsite.Data.Migrations
             modelBuilder
                 .HasAnnotation("ProductVersion", "2.1.4-rtm-31024");
 
+            modelBuilder.Entity("MerchWebsite.Models.Products", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<bool>("Available");
+
+                    b.Property<string>("DesignStyle");
+
+                    b.Property<string>("Image");
+
+                    b.Property<string>("Name");
+
+                    b.Property<double>("Price");
+
+                    b.Property<int>("ProductTypeId");
+
+                    b.Property<int>("SpecialTagsId");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ProductTypeId");
+
+                    b.HasIndex("SpecialTagsId");
+
+                    b.ToTable("Products");
+                });
+
             modelBuilder.Entity("MerchWebsite.Models.ProductTypes", b =>
                 {
                     b.Property<int>("Id")
@@ -201,6 +229,19 @@ namespace MerchWebsite.Data.Migrations
                     b.HasKey("UserId", "LoginProvider", "Name");
 
                     b.ToTable("AspNetUserTokens");
+                });
+
+            modelBuilder.Entity("MerchWebsite.Models.Products", b =>
+                {
+                    b.HasOne("MerchWebsite.Models.ProductTypes", "ProductTypes")
+                        .WithMany()
+                        .HasForeignKey("ProductTypeId")
+                        .OnDelete(DeleteBehavior.Cascade);
+
+                    b.HasOne("MerchWebsite.Models.SpecialTags", "SpecialTags")
+                        .WithMany()
+                        .HasForeignKey("SpecialTagsId")
+                        .OnDelete(DeleteBehavior.Cascade);
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
