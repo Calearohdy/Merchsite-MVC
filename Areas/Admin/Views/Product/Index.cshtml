@@ -2,7 +2,7 @@
     @{
         ViewData["Title"] = "Index";
     }
-
+<div class="container">
     <br /><br />
 
     <div class="row">
@@ -46,7 +46,7 @@
                         @Html.DisplayFor(m => item.Name)
                     </td>
                     <td>
-                        @Html.DisplayFor(m => item.Price)
+                        @String.Format("{0:c}", item.Price)
                     </td>
                     <td>
                         @Html.DisplayFor(m => item.Available)
@@ -64,3 +64,4 @@
             }
         </table>
     </div>
+</div>
