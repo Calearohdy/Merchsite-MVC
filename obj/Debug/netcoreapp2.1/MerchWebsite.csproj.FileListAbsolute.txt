@@ -55,3 +55,4 @@
 /Users/calerohdy/Desktop/Projects/MerchWebsite/obj/Debug/netcoreapp2.1/Razor/Areas/Admin/Views/Product/Edit.g.cshtml.cs
 /Users/calerohdy/Desktop/Projects/MerchWebsite/obj/Debug/netcoreapp2.1/Razor/Areas/Admin/Views/Product/Delete.g.cshtml.cs
 /Users/calerohdy/Desktop/Projects/MerchWebsite/obj/Debug/netcoreapp2.1/Razor/Areas/Admin/Views/Product/Details.g.cshtml.cs
+/Users/calerohdy/Desktop/Projects/MerchWebsite/obj/Debug/netcoreapp2.1/Razor/Areas/Customer/Views/Home/Details.g.cshtml.cs

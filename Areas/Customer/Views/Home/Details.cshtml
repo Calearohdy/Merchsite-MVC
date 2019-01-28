@@ -1,0 +1,101 @@
+@model MerchWebsite.Models.Products
+@using MerchWebsite.Extension
+@using Microsoft.AspNetCore.Http
+@using MerchWebsite.Util
+
+@inject IHttpContextAccessor HttpContextAccessor
+
+<br />
+<div class="container">
+<h2 class="text-info">Product Details</h2>
+<form method="POST">
+    <div class="p-4 border rounded row">
+        <div class="col-8">
+
+        <div class="form-group row">
+            <div class="col-4">
+                <label asp-for="Name"></label>
+            </div>
+            <div class="col-8">
+                <input readonly asp-for="Name" class="form-control" />
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <div class="col-4">
+                <label asp-for="Price"></label>
+            </div>
+            <div class="col-8">
+                <input readonly asp-for="Price" class="form-control" />
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <div class="col-4">
+                <label asp-for="ProductTypes">Product Type</label>
+            </div>
+            <div class="col-8">
+                <input readonly asp-for="ProductTypes.Name" class="form-control">
+            </div>
+        </div>
+        @if (!Model.SpecialTags.Name.Equals("None"))
+        {
+        <div class="form-group row">
+            <div class="col-4">
+                <label asp-for="SpecialTags">Special</label>
+            </div>
+            <div class="col-8">
+                <input readonly asp-for="SpecialTags.Name" class="form-control">
+            </div>
+        </div>
+        }
+
+
+        <div class="form-group row">
+            <div class="col-4">
+                <label asp-for="DesignStyle">Design</label>
+            </div>
+            <div class="col-8">
+                <input readonly asp-for="DesignStyle" class="form-control" />
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <div class="col-4">
+            </div>
+            <div class="col-8">
+                @{
+                    bool inBag = false;
+                    List<int> inCart = HttpContextAccessor.HttpContext.Session.Get<List<int>>("ssShoppingCart");
+                    if(inCart != null && inCart.Contains(Model.Id))
+                    {
+                        inBag = true;
+                    }
+                }
+
+                @if(inBag)
+                {<button type="submit" value="Remove From Bag" asp-action="Remove" asp-route-id="@Model.Id" class="btn btn-danger form-control">Remove From Bag</button>}
+                else {<button type="submit" value="Add to Bag" asp-route-id="@Model.Id" class="btn btn-primary form-control">Add to Bag</button>}
+                    
+            </div>
+        </div>                                
+        </div>
+        <div class="col-1">
+
+        </div>
+        <div class="col-3">
+            <img src="@Model.Image" width="100%" style="border-radius:5px; border:1px solid black" />
+            <br /><br/>
+        @if(Model.Available)
+        {
+            <div>In Stock</div>
+        }
+        </div>
+        <div class="form-group">
+            <input hidden asp-for="Id" />        
+            <a asp-action="About" class="btn btn-success">Back to List</a>
+        </div>
+    </div>
+</form>
+</div>
+<partial name="_FooterPartial" />
