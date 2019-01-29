@@ -19,5 +19,6 @@ namespace MerchWebsite.Data
         public DbSet<Products> Products { get; set; }
         public DbSet<Shipping> Shipping { get; set; }
         public DbSet<ShippingProducts> ShippingProducts { get; set; }
+        public DbSet<ShoppingUser> ShoppingUser { get; set; }
     }
 }

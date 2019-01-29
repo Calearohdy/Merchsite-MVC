@@ -158,6 +158,9 @@ namespace MerchWebsite.Data.Migrations
                     b.Property<string>("ConcurrencyStamp")
                         .IsConcurrencyToken();
 
+                    b.Property<string>("Discriminator")
+                        .IsRequired();
+
                     b.Property<string>("Email")
                         .HasMaxLength(256);
 
@@ -196,6 +199,8 @@ namespace MerchWebsite.Data.Migrations
                         .HasName("UserNameIndex");
 
                     b.ToTable("AspNetUsers");
+
+                    b.HasDiscriminator<string>("Discriminator").HasValue("IdentityUser");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
@@ -265,6 +270,17 @@ namespace MerchWebsite.Data.Migrations
                     b.HasKey("UserId", "LoginProvider", "Name");
 
                     b.ToTable("AspNetUserTokens");
+                });
+
+            modelBuilder.Entity("MerchWebsite.Models.ShoppingUser", b =>
+                {
+                    b.HasBaseType("Microsoft.AspNetCore.Identity.IdentityUser");
+
+                    b.Property<string>("Name");
+
+                    b.ToTable("ShoppingUser");
+
+                    b.HasDiscriminator().HasValue("ShoppingUser");
                 });
 
             modelBuilder.Entity("MerchWebsite.Models.Products", b =>
