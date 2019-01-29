@@ -103,7 +103,7 @@ WriteAttributeValue("", 604, product.Image, 604, 14, false);
             WriteLiteral("</b></label>\r\n                            </div>\r\n                            ");
             EndContext();
             BeginContext(1003, 141, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "19fff5985a0f49068e4502c54c8b2977", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ea2b866dc04e4b8e8edc01bdd692a210", async() => {
                 BeginContext(1128, 12, true);
                 WriteLiteral("View Details");
                 EndContext();

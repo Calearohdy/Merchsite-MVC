@@ -3,14 +3,16 @@ using System;
 using MerchWebsite.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace MerchWebsite.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20190129023804_ShippingInfo")]
+    partial class ShippingInfo
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -55,42 +57,6 @@ namespace MerchWebsite.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("ProductTypes");
-                });
-
-            modelBuilder.Entity("MerchWebsite.Models.Shipping", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd();
-
-                    b.Property<string>("CustomerEmail");
-
-                    b.Property<string>("CustomerName");
-
-                    b.Property<DateTime>("ShippingDate");
-
-                    b.Property<bool>("isConfirmed");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Shipping");
-                });
-
-            modelBuilder.Entity("MerchWebsite.Models.ShippingProducts", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd();
-
-                    b.Property<int>("ProductId");
-
-                    b.Property<int>("ShippingId");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("ProductId");
-
-                    b.HasIndex("ShippingId");
-
-                    b.ToTable("ShippingProducts");
                 });
 
             modelBuilder.Entity("MerchWebsite.Models.SpecialTags", b =>
@@ -277,19 +243,6 @@ namespace MerchWebsite.Data.Migrations
                     b.HasOne("MerchWebsite.Models.SpecialTags", "SpecialTags")
                         .WithMany()
                         .HasForeignKey("SpecialTagsId")
-                        .OnDelete(DeleteBehavior.Cascade);
-                });
-
-            modelBuilder.Entity("MerchWebsite.Models.ShippingProducts", b =>
-                {
-                    b.HasOne("MerchWebsite.Models.Products", "Products")
-                        .WithMany()
-                        .HasForeignKey("ProductId")
-                        .OnDelete(DeleteBehavior.Cascade);
-
-                    b.HasOne("MerchWebsite.Models.Shipping", "Shipping")
-                        .WithMany()
-                        .HasForeignKey("ShippingId")
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 

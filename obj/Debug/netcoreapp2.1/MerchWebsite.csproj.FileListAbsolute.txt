@@ -56,3 +56,7 @@
 /Users/calerohdy/Desktop/Projects/MerchWebsite/obj/Debug/netcoreapp2.1/Razor/Areas/Admin/Views/Product/Delete.g.cshtml.cs
 /Users/calerohdy/Desktop/Projects/MerchWebsite/obj/Debug/netcoreapp2.1/Razor/Areas/Admin/Views/Product/Details.g.cshtml.cs
 /Users/calerohdy/Desktop/Projects/MerchWebsite/obj/Debug/netcoreapp2.1/Razor/Areas/Customer/Views/Home/Details.g.cshtml.cs
+/Users/calerohdy/Desktop/Projects/MerchWebsite/obj/Debug/netcoreapp2.1/Razor/Areas/Customer/Views/ShoppingCart/Index.g.cshtml.cs
+/Users/calerohdy/Desktop/Projects/MerchWebsite/obj/Debug/netcoreapp2.1/Razor/Areas/Customer/Views/ShoppingCart/ShoppingConfirmation.g.cshtml.cs
+/Users/calerohdy/Desktop/Projects/MerchWebsite/obj/Debug/netcoreapp2.1/Razor/Views/Shared/_ShippingCustDetails.g.cshtml.cs
+/Users/calerohdy/Desktop/Projects/MerchWebsite/obj/Debug/netcoreapp2.1/Razor/Views/Shared/_ShippingDetail.g.cshtml.cs

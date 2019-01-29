@@ -67,7 +67,7 @@ using MerchWebsite.Models;
             WriteLiteral("<div class=\"container\">\n    <br /><br />\n\n    <div class=\"row\">\n        <div class=\"col-6\">\n            <h2 class=\"text-info\"> Product Type List</h2>\n        </div>\n        <div class=\"col-6 text-right\">\n            ");
             EndContext();
             BeginContext(319, 98, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "98a149739f154a779e9a3aa20f84bf3e", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f38adf5a156749c08952a82d2f9125df", async() => {
                 BeginContext(363, 50, true);
                 WriteLiteral("<i class=\"fas fa-plus\"></i>&nbsp; New Product Type");
                 EndContext();
@@ -119,7 +119,7 @@ using MerchWebsite.Models;
             WriteLiteral("\n                    </td>\n                    <td>\n                        ");
             EndContext();
             BeginContext(953, 54, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "c290e2da70904a82baf7628c09bc218b", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "120f7d7953f54838a62798b5c57443a6", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_TagHelpers_PartialTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper>();
