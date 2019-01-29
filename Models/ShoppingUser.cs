@@ -8,6 +8,6 @@ namespace MerchWebsite.Models
         public string Name { get; set; }
 
         [NotMapped]
-        public bool isAdmin { get; set; }
+        public bool isAdmin { get; set; } = false;
     }
 }

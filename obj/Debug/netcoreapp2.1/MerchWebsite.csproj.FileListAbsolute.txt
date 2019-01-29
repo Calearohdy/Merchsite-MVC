@@ -92,3 +92,6 @@
 /Users/calerohdy/Desktop/Projects/MerchWebsite/obj/Debug/netcoreapp2.1/Razor/Areas/Identity/Pages/Account/_ViewImports.g.cshtml.cs
 /Users/calerohdy/Desktop/Projects/MerchWebsite/obj/Debug/netcoreapp2.1/Razor/Areas/Identity/Pages/_ValidationScriptsPartial.g.cshtml.cs
 /Users/calerohdy/Desktop/Projects/MerchWebsite/obj/Debug/netcoreapp2.1/Razor/Areas/Identity/Pages/_ViewImports.g.cshtml.cs
+/Users/calerohdy/Desktop/Projects/MerchWebsite/obj/Debug/netcoreapp2.1/Razor/Areas/Admin/Views/AdminUsers/Index.g.cshtml.cs
+/Users/calerohdy/Desktop/Projects/MerchWebsite/obj/Debug/netcoreapp2.1/Razor/Areas/Admin/Views/AdminUsers/Edit.g.cshtml.cs
+/Users/calerohdy/Desktop/Projects/MerchWebsite/obj/Debug/netcoreapp2.1/Razor/Areas/Admin/Views/AdminUsers/Delete.g.cshtml.cs

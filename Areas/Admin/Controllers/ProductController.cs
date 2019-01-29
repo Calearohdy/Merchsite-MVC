@@ -5,12 +5,14 @@ using MerchWebsite.Data;
 using MerchWebsite.Models;
 using MerchWebsite.Models.ViewModels;
 using MerchWebsite.Util;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Hosting.Internal;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace MerchWebsite.Areas.Admin.Controllers
 {
+    [Authorize(Roles = SD.AdminEndUser)]
     [Area("Admin")] // Tells template: "{area=^*}/{controller=^*}/{action=^*}/{id?}");
     public class ProductController : Controller
     {

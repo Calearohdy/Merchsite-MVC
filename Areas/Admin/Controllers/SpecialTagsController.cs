@@ -2,10 +2,13 @@ using System.Linq;
 using System.Threading.Tasks;
 using MerchWebsite.Data;
 using MerchWebsite.Models;
+using MerchWebsite.Util;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace MerchWebsite.Areas.Admin.Controllers
 {
+    [Authorize(Roles = SD.AdminEndUser)]    
     [Area("Admin")] // Tells template: "{area=*}/{controller=*}/{action=*}/{id?}");
     public class SpecialTagsController : Controller
     {
