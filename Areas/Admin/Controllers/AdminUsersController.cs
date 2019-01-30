@@ -14,13 +14,14 @@ namespace MerchWebsite.Areas.Customer.Controllers
     public class AdminUsersController : Controller
     {
         private readonly ApplicationDbContext context;
+        private int PageSize = 4;
         public AdminUsersController(ApplicationDbContext context)
         {
             this.context = context;
 
         }
 
-        public IActionResult Index()
+        public IActionResult Index(int userPage = 1)
         {
             return View(context.ShoppingUser.ToList());
         }

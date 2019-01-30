@@ -24,7 +24,7 @@ using MerchWebsite.Models;
 #line default
 #line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"3d57fd94548cbf3e745ef2c97fd2f901b9fa327f", @"/Areas/Customer/Views/ShoppingCart/ShoppingConfirmation.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"249115d2d655fa036a68974c473149af894b6ee5", @"/Areas/Customer/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"48bf24ba1330f3fe8b5ce0742f6aecc5b3156b70", @"/Areas/Customer/Views/_ViewImports.cshtml")]
     public class Areas_Customer_Views_ShoppingCart_ShoppingConfirmation : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<MerchWebsite.Models.ViewModels.ShoppingCartViewModel>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("name", "~/Views/Shared/_ShippingCustDetails.cshtml", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -69,7 +69,7 @@ using MerchWebsite.Models;
             WriteLiteral("<br />\n<div class=\"container\">\n    <h2 class=\"text-info\"></h2>\n    <div>\n\n    </div>\n<br />\n");
             EndContext();
             BeginContext(206, 84, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "bd79099e01bd4afba41435bcf6402661", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "ea50daef99054f02a7c47b030cf1b465", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_TagHelpers_PartialTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper>();
@@ -94,7 +94,7 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_PartialTagHelper.Model = Model.Shipping;
             WriteLiteral("\n<br />\n");
             EndContext();
             BeginContext(298, 79, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "2209edb39e344b0ea945e7ffc72551a7", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "9213b015860d4738b890946cfbfeef24", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_TagHelpers_PartialTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper>();
@@ -119,7 +119,7 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_PartialTagHelper.Model = Model.Products;
             WriteLiteral("\n\n");
             EndContext();
             BeginContext(379, 140, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "23840fecbc9c41109ad92716e9115fbd", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "09032d32c23d456f86302ec4f6fa1505", async() => {
                 BeginContext(469, 46, true);
                 WriteLiteral("<i class=\"fas fa-arrow-left\"></i> Back to List");
                 EndContext();
